@@ -20,7 +20,36 @@
 
 int main(){
 
-    printf("hello world");
+    /**
+     * Ejemplos de operadores.
+     * */
+
+    //operadores aritmeticos
+    int a = 3 + 4;
+    int b = 3 - 4;
+    int c = 3 * 4;
+    double d = 3.0 / 4;
+    int e = 3 % 4;
+    printf("arithmetic operators: %i, %i, %i, %f, %i \n", a, b, c, d, e);
+
+    //operadores lógicos
+//    int logicError = true && false; //compillation error. It works including <stdbool.h>
+    int logicA = 1 && 0; //false
+    int logicB = 1 & 0;  //false
+    int logicC = 1 || 0; //true
+    int logicD = 1 | 0;  //true
+    printf("operadores logicos: %i, %i, %i, %i \n", logicA, logicB, logicC, logicD);
+
+    //operadores de comparación
+    int boolA = 4 == 4.0; //true
+    int boolB = 2 == 4;   //false
+    int boolC = 4 != 5;   //true
+    int boolD = 4 > 6;    //false
+    int boolE = 4 < 6;    //true
+    int boolF = 4 <= 4;   //true
+    int boolG = 6 >= 4;   //true
+    printf("operadores de comparacion: %i, %i, %i, %i, %i, %i, %i \n", boolA, boolB, boolC, boolD, boolE, boolF, boolG);
+
 
     return 0;
 }
